@@ -1,12 +1,12 @@
 body { 
   margin:0;padding:0;
   background: #45464d; 
-  height: 600px;
+
 }
 
-.container { width: 100%; position:relative; }
+.container { width: 100%; position:relative;  height:100vh; }
 
-h1 {
+h1{
   color: white;
   font-family: "Century Gothic", futura, helvetica, arial, sans-serif;
   font-size:1em;
@@ -60,4 +60,15 @@ h1 {
 .hour {
   margin: -60px -2px 0;
   padding: 60px 2px 0;
+}
+
+i {
+  color: #fff;
+  position:absolute; 
+  right:0;bottom:0;
+  padding:10px;
+}
+
+i.fa-volume-off {
+  right:8px;
 }

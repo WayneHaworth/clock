@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #45464d;
-  height: 600px; }
+  background: #45464d; }
 
 .container {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 h1 {
   color: white;
@@ -56,3 +56,13 @@ h1 {
 .hour {
   margin: -60px -2px 0;
   padding: 60px 2px 0; }
+
+i {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px; }
+
+i.fa-volume-off {
+  right: 8px; }
