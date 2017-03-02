@@ -1,16 +1,30 @@
 $(document).ready(function() {
 
-	$(window).on('keydown', function(e) {
-		var audio = $('audio[data-key="' + e.keyCode + '"]');
-	  
-		$('div.key[data-key="' + e.keyCode + '"]').addClass('bigger');
-		$('div.key').on('transitionend', function() {
-			$(this).removeClass('bigger');
-		});
+  var tick = $('audio[data-key="second"');
 
-		if (!audio[0]) { return 0; } // do not play if no audio element found
-		audio[0].currentTime = 0; // reset sample if hitting the note quickly.
-		audio[0].play();
-	});
+  function secondsToDegree() {
+      var moment = new Date(); 
+      var s = moment.getSeconds() * 6;
+      return s;
+  }
 
+  function minutesToDegree() {
+      var moment = new Date(); 
+      var m = moment.getMinutes() * 6;
+      return m;
+  }
+
+  function hoursToDegree() {
+      var moment = new Date(); 
+      var m = moment.getHours() % 12 / 12 * 360 + (0 / 12);
+      return m;
+  }
+
+  window.setInterval(function() {
+      $('.second').css("transform", "rotate(" + (secondsToDegree() + 360) + "deg)");
+      $('.minute').css("transform", "rotate(" + (minutesToDegree() + 360) + "deg)");
+      $('.hour').css("transform", "rotate(" + (hoursToDegree() + 360) + "deg)");
+      tick[0].play();
+  }, 1000);
 });
+

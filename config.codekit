@@ -11,17 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 477819,
-		"inputAbbreviatedPath": "\/images\/bg.jpg",
-		"outputAbbreviatedPath": "\/images\/bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -77,9 +66,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "drumkit",
+	"displayValue": "clock",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_orange"
+	"iconImageName": "pencil_blue"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
@@ -269,7 +258,7 @@
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "define",
+	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -578,7 +567,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"couch": {
